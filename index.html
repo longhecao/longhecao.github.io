@@ -1,31 +1,175 @@
-<div id="experience" style="margin-top: 40px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
-    <h2 style="color: #2c3e50; border-bottom: 1px solid #eee; padding-bottom: 10px;">
-        Exploration in Deep Quant & Secondary Markets
-    </h2>
-    
-    <p style="color: #555; line-height: 1.8;">
-        Driven by data and financial theory, I am currently specializing in the application of 
-        <strong>Deep Learning</strong> within <strong>Secondary Equity Markets</strong>. 
-        My work focuses on bridging the gap between advanced machine learning architectures and practical alpha generation.
-    </p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Longhe Cao | Quantitative Research</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #ffffff;
+            --text: #1a1a1a;
+            --secondary: #666666;
+            --accent: #0055ff;
+            --border: #eeeeee;
+        }
 
-    <div style="display: flex; flex-wrap: wrap; gap: 30px; margin-top: 20px;">
-        <div style="flex: 1; min-width: 280px;">
-            <h3 style="font-size: 1.2em; color: #34495e;">Core Focus</h3>
-            <ul style="color: #666; padding-left: 20px;">
-                <li><strong>Alpha Mining:</strong> Feature engineering using neural networks to identify non-linear signals.</li>
-                <li><strong>Time-Series Forecasting:</strong> Implementing Transformers and LSTMs for stock price volatility prediction.</li>
-                <li><strong>Execution Algorithms:</strong> Researching optimal entry/exit strategies to minimize slippage.</li>
-            </ul>
-        </div>
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            font-family: 'Inter', -apple-system, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            -webkit-font-smoothing: antialiased;
+        }
 
-        <div style="flex: 1; min-width: 280px;">
-            <h3 style="font-size: 1.2em; color: #34495e;">Technical Expertise</h3>
-            <p style="color: #666;">
-                <strong>Modeling:</strong> PyTorch, Scikit-learn, Reinforcement Learning<br>
-                <strong>Analysis:</strong> Pandas (High-performance data manipulation), Polars<br>
-                <strong>Domain:</strong> Market Microstructure, Factor Investing, Risk Management
-            </p>
+        .container {
+            max-width: 850px;
+            margin: 80px auto;
+            padding: 0 40px;
+        }
+
+        header {
+            margin-bottom: 80px;
+        }
+
+        h1 {
+            font-weight: 300;
+            font-size: 2.5rem;
+            letter-spacing: -0.02em;
+            margin: 0;
+        }
+
+        .subtitle {
+            color: var(--secondary);
+            font-size: 1.1rem;
+            margin-top: 10px;
+        }
+
+        .section-label {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--secondary);
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 8px;
+            margin: 60px 0 30px 0;
+        }
+
+        .project {
+            margin-bottom: 40px;
+        }
+
+        .project-title {
+            font-weight: 600;
+            font-size: 1.25rem;
+            text-decoration: none;
+            color: var(--text);
+            display: inline-block;
+        }
+
+        .project-title:hover {
+            color: var(--accent);
+        }
+
+        .project-meta {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.85rem;
+            color: var(--secondary);
+            margin: 5px 0;
+        }
+
+        .project-desc {
+            margin: 10px 0;
+            color: #444;
+        }
+
+        .tag {
+            display: inline-block;
+            background: #f5f5f7;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            margin-right: 8px;
+        }
+
+        footer {
+            margin-top: 100px;
+            padding-bottom: 40px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.8rem;
+            color: var(--secondary);
+        }
+
+        a { color: var(--accent); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+
+        @media (max-width: 600px) {
+            .container { margin: 40px auto; padding: 0 20px; }
+            h1 { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Longhe Cao</h1>
+        <div class="subtitle">Quantitative Researcher & Systems Architect</div>
+        <p style="margin-top: 20px; max-width: 600px;">
+            Focused on <strong>Deep Alpha Extraction</strong> and <strong>Market Microstructure</strong>. 
+            Developing systematic trading strategies for secondary equity markets using high-fidelity data and deep learning.
+        </p>
+    </header>
+
+    <div class="section-label">Selected Research & Code (2025 Archive)</div>
+
+    <div class="project">
+        <a href="https://github.com/longhecao/your-repo-link" class="project-title">DeepAlpha-v4: Transformer-Based Factor Mining</a>
+        <div class="project-meta">Status: Production Alpha | Framework: PyTorch / Polars</div>
+        <p class="project-desc">
+            A state-of-the-art factor discovery engine utilizing Attention mechanisms to capture non-linear temporal dependencies in L2 limit order book data.
+        </p>
+        <div>
+            <span class="tag">Sequence Modeling</span>
+            <span class="tag">High-Freq Data</span>
+            <span class="tag">Cross-Sectional Alpha</span>
         </div>
     </div>
+
+    <div class="project">
+        <a href="https://github.com/longhecao/your-repo-link" class="project-title">Vector-X: Ultra-Low Latency Backtester</a>
+        <div class="project-meta">Status: Active | Language: C++20 / Python Bindings</div>
+        <p class="project-desc">
+            An event-driven backtesting engine designed for secondary markets with millisecond-level precision, accounting for slippage models and liquidity constraints.
+        </p>
+        <div>
+            <span class="tag">Zero-Copy Architecture</span>
+            <span class="tag">SIMD Optimization</span>
+        </div>
+    </div>
+
+    <div class="section-label">Technical Focus</div>
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; font-size: 0.95rem;">
+        <div>
+            <strong>Markets</strong><br>
+            Secondary Equity Markets, Market Microstructure, Order Flow Toxicity (VPIN).
+        </div>
+        <div>
+            <strong>Methods</strong><br>
+            Reinforcement Learning (PPO/DQN for Execution), GNNs for Supply Chain Alpha.
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2026 Longhe Cao. Built for Performance. <br>
+        <a href="https://github.com/longhecao">GitHub</a> / <a href="mailto:your-email@example.com">Email</a>
+    </footer>
 </div>
+
+</body>
+</html>
